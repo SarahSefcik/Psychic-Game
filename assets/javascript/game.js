@@ -28,11 +28,18 @@ document.onkeyup = function (event) {
   // Only run the following code if the user presses a letter
   if (userGuess === computerGuess) {
     wins++;
+    // Reset
+  }
+  else if (guessCount === 0) {
+    losses++;
+    // Reset
   }
   else {
-    losses++;
     guessCount--;
+  
   }
+
+
   
   // Displays references to the HTML
   winsText.textContent = "wins: " + wins;
