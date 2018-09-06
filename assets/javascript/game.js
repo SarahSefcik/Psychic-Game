@@ -42,8 +42,6 @@ document.onkeyup = function (event) {
 
     // Reset
     resetGame();
-    // guessCount = 9;
-    // lettersGuessed.length = 0;
   }
 
   // Only run if not a match but the user still has guesses left
@@ -57,8 +55,6 @@ document.onkeyup = function (event) {
 
     // Reset
     resetGame();
-    // guessCount = 9;
-    // lettersGuessed.length = 0;
   }
   
   
@@ -68,6 +64,4 @@ document.onkeyup = function (event) {
   lossesText.textContent = "losses: " + losses;
   guessesLeftText.textContent = "Guesses left: " + guessCount;
   yourGuessesSoFarText.textContent = "Your Guesses so far: " + lettersGuessed.join(', ');
-  userChoiceText.textContent = "You chose: " + userGuess;
-  computerChoiceText.textContent = "The computer chose: " + computerGuess;
 }
